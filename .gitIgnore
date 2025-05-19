@@ -1,5 +1,5 @@
 # dependencies
-/modern/node_modules
+/node_modules
 # production
 /dist
 
