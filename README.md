@@ -29,7 +29,7 @@
 
 ## 🌐 Online Portfolio
 
-👉 [View Portfolio Site](https://bufaale.github.io/qa-sdet-portfolio)
+👉 [View Portfolio Site](https://bufaale.github.io/qa-sdet-portfolio/)
 
 ---
 
