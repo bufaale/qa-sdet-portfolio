@@ -22,3 +22,6 @@ Thumbs.db
 
 # GitHub Pages deploy branch
 gh-pages
+
+# build tools
+.vite
