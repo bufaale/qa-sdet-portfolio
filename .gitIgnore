@@ -1,0 +1,24 @@
+# dependencies
+/modern/node_modules
+# production
+/dist
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# system files
+Thumbs.db
+
+# IDE/editor configs
+.idea/
+.vscode/
+*.log
+
+# OS generated
+*.swp
+
+# GitHub Pages deploy branch
+gh-pages
