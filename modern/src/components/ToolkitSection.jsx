@@ -10,7 +10,7 @@ const tools = [
   { name: "Cucumber", icon: "/assets/icons/Cucumber.svg" },
   { name: "RestAssured", icon: "/assets/icons/RestAssured.png" },
   { name: "Selenium", icon: "/assets/icons/Selenium.png" },
-  { name: "K6", icon: "/assets/icons/k6.svg" },
+  { name: "K6", icon: "modern/dist/assets/K6.svg" },
 ];
 
 export default function ToolkitSection() {
