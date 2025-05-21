@@ -48,10 +48,9 @@ export default function NavBar() {
               key={sec.name}
               href={sec.link}
               onClick={closeMenu}
-              className={`font-semibold text-sm hover:scale-110 transition ${rainbowColors[index % rainbowColors.length]}`}
-              initial={{ rotate: 0 }}
-              animate={{ rotate: [0, -2, 2, -1, 1, 0] }}
-              transition={{ repeat: Infinity, duration: 2, delay: index * 0.1 }}
+              className={`font-semibold text-sm hover:underline hover:scale-110 transition ${rainbowColors[index % rainbowColors.length]}`}
+              animate={{ y: [0, -1.5, 1.5, 0] }}
+              transition={{ repeat: Infinity, repeatType: "mirror", duration: 1.5, delay: index * 0.2 }}
             >
               {sec.name}
             </motion.a>
