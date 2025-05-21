@@ -5,7 +5,7 @@ const sections = [
   { name: "Home", link: "#hero" },
   { name: "Projects", link: "#projects" },
   { name: "Toolkit", link: "#toolkit" },
-  { name: "CV", link: "#cv" },
+  { name: "Resume", link: "#resume" },
   { name: "Contact", link: "#contact" },
 ];
 
