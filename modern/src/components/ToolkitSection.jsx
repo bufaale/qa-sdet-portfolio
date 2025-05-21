@@ -3,8 +3,8 @@ import React from "react";
 const withBasePath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 const tools = [
-  { name: "Kotlin", icon: withBasePath("assets/icons/kotlin.svg") },
-  { name: "Java", icon: withBasePath("assets/icons/java.svg") },
+  { name: "Kotlin", icon: withBasePath("assets/icons/kotlin.png") },
+  { name: "Java", icon: withBasePath("assets/icons/java.png") },
   { name: "Python", icon: withBasePath("assets/icons/python.png") },
   { name: "Git", icon: withBasePath("assets/icons/git.png") },
   { name: "GitHub", icon: withBasePath("assets/icons/github.png") },
