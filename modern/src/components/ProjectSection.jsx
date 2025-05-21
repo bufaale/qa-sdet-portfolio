@@ -4,7 +4,7 @@ export default function ProjectSection() {
       <h2 className="text-3xl font-bold mb-8 text-white">Selected Projects</h2>
       <div className="grid gap-8">
         <a
-          href="https://github.com/bufaale/automation-api-java-serenity"
+          href="https://github.com/bufaale/api-testing"
           target="_blank"
           rel="noopener noreferrer"
           className="block bg-zinc-800 p-6 rounded-lg shadow-md hover:bg-zinc-700 transition duration-200"
