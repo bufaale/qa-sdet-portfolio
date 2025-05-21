@@ -7,7 +7,7 @@ export default function HeroSection() {
       </p>
       <div className="mt-6 flex gap-4">
         <a href="#projects" className="px-5 py-2 rounded bg-white text-zinc-900 font-semibold">See my work</a>
-        <a href="mailto:alejandroebufarini@gmail.com" className="px-5 py-2 rounded border border-white">Contact</a>
+        <a href="#contact" className="px-5 py-2 rounded border border-white">Contact</a>
       </div>
     </section>
   )

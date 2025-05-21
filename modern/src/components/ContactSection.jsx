@@ -1,28 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function ContactSection() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
   return (
-    <section className="py-20 px-6 max-w-4xl mx-auto text-center" id="contact">
+    <section className="py-20 px-6 max-w-3xl mx-auto text-center" id="contact">
       <h2 className="text-3xl font-bold mb-6 text-white">Let’s Connect</h2>
       <p className="text-gray-400 mb-8">
-        If you’d like to talk about collaboration, QA consulting, or just say hi — feel free to reach out!
+        Drop me a message and I’ll get back to you soon!
       </p>
-      <div className="flex justify-center gap-6 flex-wrap">
-        <a
-          href="mailto:alejandroebufarini@gmail.com"
-          className="bg-zinc-800 px-6 py-3 rounded-lg text-white hover:bg-zinc-700 transition"
-        >
-          📩 alejandroebufarini@gmail.com
-        </a>
-        <a
-          href="https://www.linkedin.com/in/alejandro-bufarini-113060129"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-600 px-6 py-3 rounded-lg text-white hover:bg-blue-500 transition"
-        >
-          💼 LinkedIn Profile
-        </a>
-      </div>
+
+      {!submitted ? (
+        <form onSubmit={handleSubmit} className="space-y-4 text-left">
+          <input
+            type="text"
+            placeholder="Your name"
+            required
+            className="w-full p-3 rounded bg-zinc-800 text-white border border-zinc-700"
+          />
+          <input
+            type="email"
+            placeholder="Your email"
+            required
+            className="w-full p-3 rounded bg-zinc-800 text-white border border-zinc-700"
+          />
+          <textarea
+            placeholder="Your message"
+            rows="5"
+            required
+            className="w-full p-3 rounded bg-zinc-800 text-white border border-zinc-700"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      ) : (
+        <p className="text-green-400 mt-6">✅ Message submitted! Thank you 🙂</p>
+      )}
     </section>
   );
 }
