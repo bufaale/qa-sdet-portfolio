@@ -7,7 +7,7 @@ const tools = [
   { name: "Git", icon: "/assets/icons/Git.svg" },
   { name: "GitHub", icon: "/assets/icons/Github.svg" },
   { name: "Serenity", icon: "/assets/icons/Serenity.png" },
-  { name: "Cucumber", icon: "/assets/icons/Cucumber.svg" },
+  { name: "Cucumber", icon: "modern/assets/cucumber.png" },
   { name: "RestAssured", icon: "/assets/icons/RestAssured.png" },
   { name: "Selenium", icon: "/assets/icons/Selenium.png" },
   { name: "K6", icon: "modern/dist/assets/K6.svg" },
