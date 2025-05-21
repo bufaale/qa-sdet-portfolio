@@ -18,7 +18,7 @@ const tools = [
 
 export default function ToolkitSection() {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+    <section id="toolkit" className="py-20 px-6 max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-10 text-white text-center">My Toolkit</h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-items-center">
         {tools.map((tool) => (
