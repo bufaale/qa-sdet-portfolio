@@ -1,36 +1,54 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+const sections = [
+  { name: "Home", link: "#hero" },
+  { name: "Projects", link: "#projects" },
+  { name: "Toolkit", link: "#toolkit" },
+  { name: "CV", link: "#cv" },
+  { name: "Contact", link: "#contact" },
+];
 
 export default function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false);
-    }
-  };
+  const toggleMenu = () => setOpen(!open);
+  const closeMenu = () => setOpen(false);
 
   return (
-    <>
+    <div className="fixed top-6 right-6 z-50">
       <button
+        className="space-y-1 group"
         onClick={toggleMenu}
-        className="fixed top-6 right-6 z-50 bg-white text-zinc-900 px-4 py-2 rounded-full shadow-lg font-semibold hover:bg-gray-100 transition"
+        aria-label="Menu"
       >
-        {isOpen ? "Close" : "Menu"}
+        <div className="w-6 h-0.5 bg-white transition-all group-hover:scale-x-125"></div>
+        <div className="w-6 h-0.5 bg-white transition-all group-hover:scale-x-125"></div>
+        <div className="w-6 h-0.5 bg-white transition-all group-hover:scale-x-125"></div>
       </button>
 
-      {isOpen && (
-        <div className="fixed inset-0 bg-gradient-to-br from-pink-400 to-cyan-300 z-40 flex flex-col items-center justify-center text-white text-3xl gap-8 font-bold">
-          <button onClick={() => scrollTo("home")}>Home</button>
-          <button onClick={() => scrollTo("projects")}>My Work</button>
-          <button onClick={() => scrollTo("toolkit")}>My Skills</button>
-          <button onClick={() => scrollTo("cv")}>Download CV</button>
-          <button onClick={() => scrollTo("contact")}>Contact</button>
-        </div>
+      {open && (
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 40 }}
+          className="absolute top-0 right-16 flex gap-4 bg-zinc-900 px-6 py-4 rounded-lg shadow-2xl"
+        >
+          {sections.map((sec, index) => (
+            <motion.a
+              key={sec.name}
+              href={sec.link}
+              onClick={closeMenu}
+              className="text-white font-semibold text-sm hover:text-blue-400"
+              initial={{ rotate: 0 }}
+              animate={{ rotate: [0, -2, 2, -1, 1, 0] }}
+              transition={{ repeat: Infinity, duration: 2, delay: index * 0.1 }}
+            >
+              {sec.name}
+            </motion.a>
+          ))}
+        </motion.div>
       )}
-    </>
+    </div>
   );
 }
