@@ -1,6 +1,6 @@
 export default function DownloadCVSection() {
   return (
-    <section id="cv" className="py-20 px-6 max-w-3xl mx-auto text-center">
+    <section id="cv" className="py-32 px-6 max-w-3xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-4 text-white">Want my CV?</h2>
       <p className="text-gray-400 mb-6">
         Download my resume to explore my experience, skills and projects in detail.
