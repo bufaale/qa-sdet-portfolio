@@ -1,7 +1,5 @@
 # Alejandro Bufarini — QA Automation Engineer (SDET)
 
-![Preview](assets/preview.png)
-
 [![GitHub Pages](https://img.shields.io/github/deployments/bufaale/qa-sdet-portfolio/github-pages?label=deployed&logo=github)](https://bufaale.github.io/qa-sdet-portfolio)
 
 👋 Hi! I'm Alejandro, a Senior QA Automation Engineer with over 10 years of experience designing scalable test automation frameworks for Web, API, and Performance testing.
