@@ -35,15 +35,35 @@ export default function ContactSection() {
             required
             className="w-full p-3 rounded bg-zinc-800 text-white border border-zinc-700"
           ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition"
-          >
-            Send Message
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              type="submit"
+              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 transition"
+            >
+              Send Message
+            </button>
+            <a
+              href="https://www.linkedin.com/in/alejandro-bufarini-113060129/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-blue-600 text-blue-400 px-6 py-2 rounded hover:bg-blue-600 hover:text-white transition"
+            >
+              View LinkedIn
+            </a>
+          </div>
         </form>
       ) : (
-        <p className="text-green-400 mt-6">✅ Message submitted! Thank you 🙂</p>
+        <>
+          <p className="text-green-400 mt-6">✅ Message submitted! Thank you 🙂</p>
+          <a
+            href="https://www.linkedin.com/in/alejandro-bufarini-113060129/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 border border-blue-600 text-blue-400 px-6 py-2 rounded hover:bg-blue-600 hover:text-white transition"
+          >
+            View LinkedIn
+          </a>
+        </>
       )}
     </section>
   );
