@@ -1,17 +1,20 @@
 import React from "react";
 
+const withBasePath = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const tools = [
-  { name: "Kotlin", icon: "/assets/icons/kotlin.svg" },
-  { name: "Java", icon: "/assets/icons/java.svg" },
-  { name: "Python", icon: "/assets/icons/python.png" },
-  { name: "Git", icon: "/assets/icons/git.png" },
-  { name: "GitHub", icon: "/assets/icons/github.png" },
-  { name: "Serenity", icon: "/assets/icons/serenity.png" },
-  { name: "Cucumber", icon: "/assets/icons/cucumber.png" },
-  { name: "RestAssured", icon: "/assets/icons/restassured.png" },
-  { name: "Selenium", icon: "/assets/icons/selenium.png" },
-  { name: "K6", icon: "/assets/icons/K6.svg" }
+  { name: "Kotlin", icon: withBasePath("assets/icons/kotlin.svg") },
+  { name: "Java", icon: withBasePath("assets/icons/java.svg") },
+  { name: "Python", icon: withBasePath("assets/icons/python.png") },
+  { name: "Git", icon: withBasePath("assets/icons/git.png") },
+  { name: "GitHub", icon: withBasePath("assets/icons/github.png") },
+  { name: "Serenity", icon: withBasePath("assets/icons/serenity.png") },
+  { name: "Cucumber", icon: withBasePath("assets/icons/cucumber.png") },
+  { name: "RestAssured", icon: withBasePath("assets/icons/restassured.png") },
+  { name: "Selenium", icon: withBasePath("assets/icons/selenium.png") },
+  { name: "K6", icon: withBasePath("assets/icons/k6.png") },
 ];
+
 
 export default function ToolkitSection() {
   return (
