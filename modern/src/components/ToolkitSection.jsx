@@ -1,16 +1,16 @@
 import React from "react";
 
 const tools = [
-  { name: "Kotlin", icon: "/assets/icons/Kotlin.svg" },
+  { name: "Kotlin", icon: "/assets/icons/kotlin.svg" },
   { name: "Java", icon: "/assets/icons/java.svg" },
-  { name: "Python", icon: "/assets/icons/python.svg" },
-  { name: "Git", icon: "/assets/icons/Git.svg" },
-  { name: "GitHub", icon: "/assets/icons/Github.svg" },
-  { name: "Serenity", icon: "/assets/icons/Serenity.png" },
+  { name: "Python", icon: "/assets/icons/python.png" },
+  { name: "Git", icon: "/assets/icons/git.png" },
+  { name: "GitHub", icon: "/assets/icons/github.png" },
+  { name: "Serenity", icon: "/assets/icons/serenity.png" },
   { name: "Cucumber", icon: "/assets/icons/cucumber.png" },
-  { name: "RestAssured", icon: "/assets/icons/RestAssured.png" },
-  { name: "Selenium", icon: "/assets/icons/Selenium.png" },
-  { name: "K6", icon: "modern/dist/assets/K6.svg" },
+  { name: "RestAssured", icon: "/assets/icons/restassured.png" },
+  { name: "Selenium", icon: "/assets/icons/selenium.png" },
+  { name: "K6", icon: "/assets/icons/K6.svg" }
 ];
 
 export default function ToolkitSection() {
