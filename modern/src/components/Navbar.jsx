@@ -15,6 +15,15 @@ export default function NavBar() {
   const toggleMenu = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
 
+  const rainbowColors = [
+    "text-red-400",
+    "text-orange-400",
+    "text-yellow-400",
+    "text-green-400",
+    "text-blue-400",
+    "text-purple-400"
+  ];
+
   return (
     <div className="fixed top-6 right-6 z-50">
       <button
@@ -39,7 +48,7 @@ export default function NavBar() {
               key={sec.name}
               href={sec.link}
               onClick={closeMenu}
-              className="text-white font-semibold text-sm hover:text-blue-400"
+              className={`font-semibold text-sm hover:scale-110 transition ${rainbowColors[index % rainbowColors.length]}`}
               initial={{ rotate: 0 }}
               animate={{ rotate: [0, -2, 2, -1, 1, 0] }}
               transition={{ repeat: Infinity, duration: 2, delay: index * 0.1 }}
