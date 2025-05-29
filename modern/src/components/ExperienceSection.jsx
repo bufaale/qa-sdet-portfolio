@@ -61,7 +61,7 @@ const experiences = [
     iconColor: "bg-blue-500",
   },
   {
-    company: "Infosys",
+    company: "Infosis",
     role: "QA Automation",
     period: "Apr 2016 – Sep 2021",
     description: (
