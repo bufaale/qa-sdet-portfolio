@@ -9,7 +9,7 @@ export default function DownloadCVSection() {
         Download my resume to explore my experience, skills and projects in detail.
       </p>
       <a
-        href="/bufarini_alejandro_resume.pdf"
+         href="assets/documents/bufarini_alejandro_resume.pdf"
         download
         className="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-500 transition font-semibold"
       >
