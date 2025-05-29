@@ -7,54 +7,84 @@ const experiences = [
     period: "Sep 2023 – Present",
     description: (
       <>
-        <p>
-          Currently working on a financial transaction system performing smoke and regression testing across 80+ microservices.
-          Building robust and scalable test frameworks in Kotlin using Serenity BDD and Screenplay.
-        </p>
         <ul className="list-disc list-inside mt-2 text-sm text-gray-300">
-          <li>Data-driven REST API automation with decoupled logic via JSON configurations.</li>
-          <li>Advanced response validations (nested JSONs, arrays, expected behavior).</li>
-          <li>Dynamic data generation, assertions, SQL queries and SSL certificate support.</li>
-          <li>Component-level performance testing using K6 and Locust.</li>
+          <li>Developed performance testing using K6 aligned with architecture standards.</li>
+          <li>Created and maintained end-to-end (E2E) test flows for API services.</li>
+          <li>Executed smoke and regression tests to ensure system stability.</li>
+          <li>Developed automation tools to enhance efficiency and reliability.</li>
+          <li>Implemented support for SSL certificate handling in projects.</li>
+          <li>Designed and developed encryption and decryption methods to enhance data security and compliance.</li>
+          <li><strong>Language:</strong> Kotlin</li>
         </ul>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {["Kotlin", "Serenity BDD", "RestAssured", "K6", "SSL", "GitHub Actions"].map((tech) => (
+            <span
+              key={tech}
+              className="bg-zinc-700 text-gray-200 text-xs px-2 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </>
     ),
     iconColor: "bg-green-500",
   },
   {
     company: "Medable, Inc.",
-    role: "QA Engineer",
+    role: "Quality Assurance Engineer",
     period: "Sep 2021 – Oct 2023",
     description: (
       <>
-        <p>
-          Designed and maintained the main regression automation framework for a clinical trial web platform.
-          Focused on UI and API testing using Selenium, Python and later migrated to PyTest.
-        </p>
         <ul className="list-disc list-inside mt-2 text-sm text-gray-300">
-          <li>Replaced slow UI tests with efficient API requests to optimize execution times.</li>
-          <li>Implemented accessibility testing using Jest-Axe and integration into GitLab pipelines.</li>
-          <li>Led QA strategy sessions, technical documentation and onboarding support for new team members.</li>
+          <li>Automated web testing using Selenium with Python.</li>
+          <li>Refactored test pages and step definitions, removing unused code and improving maintainability.</li>
+          <li>Replaced slow UI tests with faster API calls in the ASP project, reducing execution times.</li>
+          <li>Built a tool for automatic site creation with complete test data generation.</li>
+          <li>Set up and maintained CI pipelines in GitLab, automating cross-browser testing via BrowserStack and reducing manual testing time by 40%.</li>
+          <li>Integrated Jest-Axe for accessibility testing in React apps.</li>
+          <li>Led the transformation to fully unattended test execution, boosting test coverage and reducing execution time by 30% while ensuring consistent delivery quality.</li>
+          <li><strong>Language:</strong> Python</li>
         </ul>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {["Python", "Selenium", "PyTest", "Jest-Axe", "GitLab CI", "BrowserStack"].map((tech) => (
+            <span
+              key={tech}
+              className="bg-zinc-700 text-gray-200 text-xs px-2 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </>
     ),
     iconColor: "bg-blue-500",
   },
   {
     company: "Infosys",
-    role: "QA Automation Engineer",
+    role: "QA Automation",
     period: "Apr 2016 – Sep 2021",
     description: (
       <>
-        <p>
-          Part of multiple banking and financial projects, focused on automating web and mobile testing using Java, Selenium and Appium.
-        </p>
         <ul className="list-disc list-inside mt-2 text-sm text-gray-300">
-          <li>Developed scalable regression suites using Page Object and Page Factory patterns.</li>
-          <li>Created automation frameworks for functional and end-to-end test coverage.</li>
-          <li>Documented QA processes and trained junior team members.</li>
-          <li>Collaborated in RPA workflows and deployments in controlled environments.</li>
+          <li>Designed, developed, and executed automated test plans for web and mobile applications using Selenium (TestNG) and Appium.</li>
+          <li>Built and maintained automated regression test suites, ensuring long-term stability and reliability.</li>
+          <li>Optimized test execution time while maintaining high coverage and reducing false positives.</li>
+          <li>Managed the bug tracking process using JIRA and TestRail, collaborating closely with developers.</li>
+          <li>Created and maintained QA process documentation and best practices for standardization.</li>
+          <li>Implemented Robotic Process Automation (RPA) solutions to automate repetitive tasks, improving efficiency and reducing errors.</li>
+          <li><strong>Language:</strong> Java</li>
         </ul>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {["Java", "Selenium", "Appium", "TestNG", "RPA", "JIRA", "TestRail"].map((tech) => (
+            <span
+              key={tech}
+              className="bg-zinc-700 text-gray-200 text-xs px-2 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </>
     ),
     iconColor: "bg-purple-500",

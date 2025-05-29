@@ -1,3 +1,6 @@
+
+const withBasePath = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export default function DownloadCVSection() {
   return (
     <section id="resume" className="py-32 px-6 max-w-3xl mx-auto text-center">
@@ -6,7 +9,7 @@ export default function DownloadCVSection() {
         Download my resume to explore my experience, skills and projects in detail.
       </p>
       <a
-        href="/Alejandro_Bufarini_CV.pdf"
+        href="/bufarini_alejandro_resume.pdf"
         download
         className="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-500 transition font-semibold"
       >
