@@ -1,6 +1,8 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 
+const withBasePath = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export default function HeroSection() {
   const blockText = `Senior QA Automation Engineer (SDET)
 Building scalable and maintainable automation frameworks
@@ -8,10 +10,20 @@ Crafting tests with Serenity BDD, RestAssured, and K6`;
 
   return (
     <section id="hero" className="h-screen flex flex-col justify-center items-center text-center px-4">
+
+      <motion.img
+        src={withBasePath("/assets/profile.jpg")} // asegurate que esté en /public/assets/
+        alt="Alejandro Bufarini"
+        className="w-32 h-32 rounded-full shadow-lg border-2 border-white mb-6 object-cover"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+      />
+
       <motion.h1
         className="text-4xl md:text-6xl font-bold mb-4"
         initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}memememme
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         Hi, I'm Alejandro Bufarini
