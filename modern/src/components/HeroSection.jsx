@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const withBasePath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 export default function HeroSection() {
-  const blockText = `Senior QA Automation Engineer (SDET)
+  const blockText = `QA Automation Engineer (SDET)
 Building scalable and maintainable automation frameworks
 Crafting tests with Serenity BDD, RestAssured, and K6`;
 
